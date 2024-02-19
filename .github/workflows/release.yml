@@ -7,6 +7,7 @@ on:
 
 jobs:
   release:
+    permissions: write-all
     name: Release
     runs-on: ubuntu-22.04
     steps:
@@ -41,7 +42,7 @@ jobs:
       - name: Create release archive
         run: |
           rm -rf node_modules tests CODE_OF_CONDUCT.md CONTRIBUTING.md flake.lock flake.nix phpstan.neon phpunit.xml shell.nix
-          tar -czf client.tar.gz * .editorconfig .env.example .eslintignore .eslintrc.js .gitignore .prettierrc.json
+          tar -czf client.tar.gz * .editorconfig .env.example .gitignore
 
       - name: Extract changelog
         env:
