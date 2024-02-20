@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,11 @@ Route::get('/', function () {
 Route::get('/test', function () {
     return view('test');
 });
+
+Route::middleware(['throttle:authentication'])->group(function () {
+    Route::post('/login', [Auth\AuthController::class, 'login']);
+});
+
 
 Route::get('/{any}', function () {
     return view('app');
