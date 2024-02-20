@@ -7,16 +7,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Version
-    |--------------------------------------------------------------------------
-    | This value is set when creating a PteroLink release. You should not
-    | change this value if you are not maintaining your own internal versions.
-    */
-
-    'version' => 'canary',
-
-    /*
-    |--------------------------------------------------------------------------
     | Application Name
     |--------------------------------------------------------------------------
     |
@@ -26,7 +16,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'PteroLink'),
+    'name' => env('APP_NAME', 'Laravel'),
 
     /*
     |--------------------------------------------------------------------------
@@ -66,6 +56,8 @@ return [
     */
 
     'url' => env('APP_URL', 'http://localhost'),
+
+    'frontend_url' => env('FRONTEND_URL', 'http://localhost:3000'),
 
     'asset_url' => env('ASSET_URL'),
 
@@ -178,7 +170,6 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
     ])->toArray(),
 
     /*

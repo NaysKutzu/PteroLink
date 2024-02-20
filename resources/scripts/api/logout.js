@@ -10,15 +10,12 @@ const http = axios.create({
   },
 });
 
-export default async ({ username, password }) => {
+export default async () => {
   try {
     // Get CSRF token for Sanctum authentication
-    await http.get('/sanctum/csrf-cookie');
-
     // Perform login request
-    const response = await http.post('/login', {
-      email: username,
-      password,
+    const response = await http.post('/logout', {
+
     });
 
     return {
