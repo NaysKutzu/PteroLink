@@ -22,6 +22,14 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'coins',
+        'memory',
+        'disk',
+        'cpu',
+        'servers',
+        'backups',
+        'datbases',
+        'ptero_id'
     ];
 
     /**

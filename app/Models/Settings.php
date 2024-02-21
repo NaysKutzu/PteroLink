@@ -8,4 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 class Settings extends Model
 {
     use HasFactory;
+
+    protected $table = 'settings';
+
+    public static function getSetting($settingName)
+    {
+        $setting = self::select($settingName)->first();
+
+        if ($setting) {
+            return $setting->{$settingName};
+        } else {
+            return null;
+        }
+    }
+
 }

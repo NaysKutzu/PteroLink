@@ -7,15 +7,15 @@ use Tests\TestCase;
 
 class RegistrationTest extends TestCase
 {
-    use RefreshDatabase;
+    //use RefreshDatabase;
 
     public function test_new_users_can_register(): void
     {
         $response = $this->post('/register', [
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-            'password' => 'password',
-            'password_confirmation' => 'password',
+            'name' => 'Tes23tUser',
+            'email' => 'test23@example.com',
+            'password' => 'ewfwefeffewfewfwef',
+            'password_confirmation' => 'ewfwefeffewfewfwef',
         ]);
 
         $this->assertAuthenticated();

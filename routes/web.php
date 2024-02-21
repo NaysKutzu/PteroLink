@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Request;
 
+use App\Models\Settings;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,5 +24,6 @@ Route::get('/', function () {
         'SSL' => $sslEnabled,
     ], Response::HTTP_OK, [], JSON_PRETTY_PRINT); // JSON_PRETTY_PRINT will format the JSON response in a human-readable way
 });
+
 
 require __DIR__.'/auth.php';
