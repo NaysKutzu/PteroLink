@@ -1,8 +1,29 @@
 {
-    "name": "laravel/laravel",
+    "name": "pterolink/panel",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "PteroLink is a API based client that is customisable to your liking. Don't like NextJS? Use what you prefer.    ",
+    "keywords": [
+        "pterolink",
+        "pterodactyl",
+        "control",
+        "atorotech",
+        "ptero"
+    ],    
+    "authors": [
+        {
+            "name": "Nyxalis",
+            "email": "nyxalis@atoro.tech",
+            "homepage": "https://atoro.tech",
+            "role": "Owner"
+        }
+    ],
+    "support": {
+        "wiki": "https://docs.atoro.tech",
+        "docs": "https://docs.atoro.tech",
+        "issues": "https://github.com/pterolink/pterolink/issues",
+        "source": "https://github.com/pterolink/pterolink",
+        "chat": "https://discord.gg/t6jAeQsA"
+    },
     "license": "MIT",
     "require": {
         "php": "^8.1",
